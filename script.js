@@ -63,7 +63,7 @@ window.onload = GetAllDataOnce;
 function GetAllDataOnce(){
     const dbRef = ref(db);
 
-    get(child(dbRef, "Units"))
+    get(child(dbRef, "UnitsList"))
     .then((snapshot) => {
         var units = [];
 
@@ -72,6 +72,6 @@ function GetAllDataOnce(){
             units.push(unitData.val());
         });
 
-        AddAllItemsToTable(units);
+        //AddAllItemsToTable(units);
     })
 }
