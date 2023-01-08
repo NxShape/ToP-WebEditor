@@ -53,9 +53,9 @@ function AddAllItemsToTable(dataList){
     stdNo = 0;
     tbody.innerHTML = "";
 
-    dataList.foreach(element => {
+    //dataList.foreach(element => {
         //AddItemToTable(element.nation, element.unitName, element.health, element.moveSpeed);
-     });
+    //});
 }
 
 window.onload = GetAllDataOnce;
@@ -68,6 +68,7 @@ function GetAllDataOnce(){
         var units = [];
 
         snapshot.forEach(unitData => {
+            System.out.println("Add");
             units.push(unitData.val());
         });
 
