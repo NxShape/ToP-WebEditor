@@ -37,7 +37,6 @@ window.onload = GetAllDataAtOnce;
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -64,8 +63,7 @@ const db = getDatabase();
 function GetAllDataAtOnce(){
     const dbRef = ref(db);
 
-    get(child(dbRef, "Units"))
-    .then((snapshot) => {
+    get(child(dbRef, "Units")).then((snapshot) => {
         var units = [];
 
         snapshot.forEach(unitData =>{
