@@ -55,9 +55,9 @@ function AddAllItemsToTable(dataList){
 
     console.log(dataList);
 
-    //dataList.foreach(element => {
-    //    AddItemToTable(element.nation, element.unitName, element.health, element.moveSpeed);
-    //});
+    dataList.forEach(element => {
+        AddItemToTable(element.nation, element.unitName, element.health, element.moveSpeed);
+    });
 }
 
 window.onload = GetAllDataOnce;
