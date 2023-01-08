@@ -23,6 +23,8 @@ const app = initializeApp(firebaseConfig);
 import { getDatabase, ref, child, onValue, get }
 from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
+const db = getDatabase();
+
 var stdNo = 0;
 var tbody = document.getElementById('tbody1');
 
