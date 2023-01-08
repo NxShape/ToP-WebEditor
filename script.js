@@ -54,22 +54,22 @@ function AddAllItemsToTable(dataList){
     tbody.innerHTML = "";
 
     dataList.foreach(element => {
-        AddItemToTable(element.nation, element.unitName, element.health, element.moveSpeed);
+        //AddItemToTable(element.nation, element.unitName, element.health, element.moveSpeed);
      });
 }
 
-window.onload = GetAllDataAtOnce;
+window.onload = GetAllDataOnce;
 
-function GetAllDataAtOnce(){
+function GetAllDataOnce(){
     const dbRef = ref(db);
 
     get(child(dbRef, "Units"))
     .then((snapshot) => {
         var units = [];
 
-        snapshot.forEach(unitData =>{
+        snapshot.forEach(unitData => {
             units.push(unitData.val());
-        })
+        });
 
         AddAllItemsToTable(units);
     })
