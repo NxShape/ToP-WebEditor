@@ -54,7 +54,7 @@ function AddAllItemsToTable(dataList){
     tbody.innerHTML = "";
 
     dataList.foreach(element => {
-        AddAllItemToTable(element.nation, element.unitName, element.health, element.moveSpeed);
+        AddItemToTable(element.nation, element.unitName, element.health, element.moveSpeed);
      });
 }
 
