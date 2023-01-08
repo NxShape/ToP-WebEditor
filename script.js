@@ -72,6 +72,6 @@ function GetAllDataOnce(){
             units.push(unitData.val());
         });
 
-        //AddAllItemsToTable(units);
+        AddAllItemsToTable(units);
     })
 }
