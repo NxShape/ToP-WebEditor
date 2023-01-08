@@ -68,7 +68,7 @@ function GetAllDataOnce(){
         var units = [];
 
         snapshot.forEach(unitData => {
-            System.out.println("Add");
+            console.log("Add");
             units.push(unitData.val());
         });
 
