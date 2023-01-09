@@ -40,33 +40,31 @@
                     <h3>Add New Unit</h3>
                 </div>
                 <form class="form-add-container">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <div class="input-group-prepend col-sm-6">
-                                <div class="input-group-text">Nation</div>
-                            </div>
-                            <select type="text" class="custom-select col-sm-6" id="nation" onsubmit="checkValidity();" required>
-                                <option value="" selected>Choose...</option>
-                                <option value="Atlants">Atlants</option>
-                                <option value="Undersky">Undersky</option>
-                                <option value="Millenium">Millenium</option>
-                            </select>
+                    <div class="input-group">
+                        <div class="input-group-prepend col">
+                            <div class="input-group-text">Nation</div>
                         </div>
+                        <select type="text" class="form-control col" id="nation" onsubmit="checkValidity();" required>
+                            <option value="" selected>Choose...</option>
+                            <option value="Atlants">Atlants</option>
+                            <option value="Undersky">Undersky</option>
+                            <option value="Millenium">Millenium</option>
+                        </select>
                     </div>
                     <div class="input-group">
-                        <div class="input-group-prepend col-sm-6">
+                        <div class="input-group-prepend col">
                             <div class="input-group-text">Unit name</div>
                         </div>
                         <input type="text" class="form-control" id="unitName" placeholder="Unit name" onsubmit="checkValidity();" required>
                     </div>
                     <div class="input-group">
-                        <div class="input-group-prepend col-sm-6">
+                        <div class="input-group-prepend col">
                             <div class="input-group-text">Health</div>
                         </div>
                         <input type="number" class="form-control" id="health" placeholder="Health" min="1" required>
                     </div>
                     <div class="input-group">
-                        <div class="input-group-prepend col-sm-6">
+                        <div class="input-group-prepend col">
                             <div class="input-group-text">Move speed</div>
                         </div>
                         <input type="number" class="form-control" id="moveSpeed" placeholder="Move speed" min="1" required>
