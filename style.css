@@ -42,7 +42,7 @@ body {
     position: relative;
     background: #fff;
     text-align: center;
-    width: 25rem;
+    max-width: 25rem;
     height: auto;
     margin: 5rem auto;
     display: block;
