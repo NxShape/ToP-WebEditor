@@ -41,7 +41,7 @@ body {
 #add_user_modal {
     position: relative;
     background: #fff;
-    width: 25rem;
+    max-width: 25rem;
     height: auto;
     margin-top: 5rem;
     margin-bottom: 5rem;
